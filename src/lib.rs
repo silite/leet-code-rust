@@ -15,6 +15,7 @@ pub mod n146;
 pub mod n146_learn;
 pub mod n1480;
 pub mod n15;
+pub mod n1792;
 pub mod n199;
 pub mod n199_new;
 pub mod n200;

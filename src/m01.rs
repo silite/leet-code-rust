@@ -14,7 +14,6 @@ impl Solution {
                 if *item == arr[index + 1] {
                     return false;
                 }
-
                 if *item < arr[index + 1] {
                     if flag == 0 {
                         flag += 1;

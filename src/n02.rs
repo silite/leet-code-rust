@@ -30,11 +30,11 @@ impl Solution {
         let mut ptr = &mut dummy;
         while let Some(l_node) = l1.take() {
             if let Some(r_node) = l2.take() {
-                let res = l_node.clone().val + r_node.clone().val + carry;
+                let res = l_node.val + r_node.val + carry;
 
                 let mut new_node = Self::get_new_node();
                 new_node.val = res % 10;
-                ptr.as_mut().next = Some(new_node);
+                ptr.next = Some(new_node);
                 ptr = ptr.next.as_mut().unwrap();
 
                 carry = res / 10;
