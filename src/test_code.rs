@@ -1,9 +1,14 @@
 fn main() {
-    let s = String::from("aaa");
-    let y = |x| s + x;
-    ex1(y);
+    let mut list = vec![1, 2, 3];
+    println!("Before defining closure: {:?}", list);
+
+    let mut borrows_mutably = || list.push(7);
+    // 此处就不能使用 list 变量
+    borrows_mutably();
+    println!("After calling closure: {:?}", list);
 }
 
-fn ex1<'a>(ex: impl FnOnce(&'a str) -> String) {
-    ex("bbb");
+#[test]
+fn feature() {
+    main()
 }
