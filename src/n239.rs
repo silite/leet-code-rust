@@ -43,6 +43,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let res = Solution::max_sliding_window([-7, -8, 7, 5, 7, 1, 6, 0].to_vec(), 4);
+    let res = Solution::max_sliding_window([1, 3, -1, -3, 5, 3, 6, 7].to_vec(), 3);
     println!("{:?}", res);
 }

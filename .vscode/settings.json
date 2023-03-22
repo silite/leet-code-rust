@@ -2,5 +2,8 @@
   "cSpell.words": [
     "Deque",
     "nums"
-  ]
+  ],
+  "lldb.showDisassembly": "auto",
+  "lldb.dereferencePointers": true,
+  "lldb.consoleMode": "commands",
 }
