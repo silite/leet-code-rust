@@ -70,6 +70,7 @@ pub mod n34;
 pub mod n39;
 pub mod n41;
 pub mod n42;
+pub mod n45;
 pub mod n46;
 pub mod n49;
 pub mod n51;
